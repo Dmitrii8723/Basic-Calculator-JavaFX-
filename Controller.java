@@ -98,6 +98,14 @@ public class Controller {
 
     public Button buttonPowerMinusOne;
 
+    @FXML
+
+    public Button buttonTan;
+
+    @FXML
+
+    public Button buttonLn;
+
     float memo = 0;
 
     int operation = -1;
@@ -219,7 +227,7 @@ public class Controller {
             memo = Float.parseFloat(display.getText());
             Double Root = Math.sqrt(memo);
 
-            DecimalFormat format = new DecimalFormat("#.00");
+            DecimalFormat format = new DecimalFormat("#.00000000000");
             String formattedText = format.format(Root);
             display.setText(formattedText);
 
@@ -230,11 +238,12 @@ public class Controller {
             memo = Float.parseFloat(display.getText());
             Double Cos = Math.cos(memo);
 
-            DecimalFormat format = new DecimalFormat("#0.00");
+            DecimalFormat format = new DecimalFormat("#0.00000000000");
             String formattedText = format.format(Cos);
             display.setText(formattedText);
 
         }
+
 
         else if (event.getSource() == buttonSin) {
 
@@ -243,6 +252,28 @@ public class Controller {
 
             DecimalFormat format = new DecimalFormat("#0.00000000000");
             String formattedText = format.format(Sin);
+            display.setText(formattedText);
+
+        }
+
+        else if (event.getSource() == buttonTan) {
+
+            memo = Float.parseFloat(display.getText());
+            Double Cos = Math.tan(memo);
+
+            DecimalFormat format = new DecimalFormat("#0.00000000000");
+            String formattedText = format.format(Cos);
+            display.setText(formattedText);
+
+        }
+
+        else if (event.getSource() == buttonLn) {
+
+            memo = Float.parseFloat(display.getText());
+            Double Ln = Math.log(memo);
+
+            DecimalFormat format = new DecimalFormat("#0.00000000000");
+            String formattedText = format.format(Ln);
             display.setText(formattedText);
 
         }
