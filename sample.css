@@ -1,0 +1,21 @@
+.button{
+    -fx-text-fill: #641029;
+    -fx-background-color: white;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-padding: 5;
+}
+
+.buttonShift{
+    -fx-text-fill: #641029;
+    -fx-background-color: orange;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-padding: 5;
+}
+
+.root{
+    -fx-text-fill: #641029;
+    -fx-background-color:silver;
+    -fx-padding: 5;
+}
